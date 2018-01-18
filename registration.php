@@ -1,3 +1,15 @@
+<?php
+	$mysqli = new mysqli "localhost", "root","","student");
+
+	$errum=mysqli_connect_errno();
+	if($errnum)
+	{
+		$errmsg=mysqli_connect_error();
+		print "connect field. error number=$errnum"
+		."<br /> error message=$errmsg";
+		exit();
+	}
+?>
 <html>
 
 <head>
